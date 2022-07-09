@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="#00ff00"
+    android:textSize="24sp"
+    android:text="这是文本视图"/>
+  <HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp">
+      <Button
+        android:id="@+id/annui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按钮"
+        android:layout_marginRight="6dp" />
+      <Button
+        android:id="@+id/peizhiAnnui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络配置"
+        android:layout_marginRight="6dp" />
+      <Button
+        android:id="@+id/peizhiMD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Design"
+        android:layout_marginRight="6dp" />
+      <Button
+        android:id="@+id/vmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模型视图视图模型"
+        android:layout_marginRight="6dp" />
+    </LinearLayout>
+  </HorizontalScrollView>
+
+  <EditText
+    android:id="@+id/editText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="在此键入某些内容吧"
+    android:maxLines="2"
+    />
+  <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/img_1"
+    />
+  <ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:max="100"
+    />
+  <Button
+    android:id="@+id/uiChuangkouxiaobujianAnnui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ui窗口小部件按钮" />
+  <Button
+    android:id="@+id/suipianAnnui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="展示碎片" />
+  <Button
+    android:id="@+id/guangboAnnui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="测试广播" />
+  <Button
+    android:id="@+id/chijiuhuaAnnui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="测试持久化 " />
+  <Button
+    android:id="@+id/meitiAnnui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="媒体测试" />
+  <Button
+    android:id="@+id/serviceAnnui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="探究Service" />
+  <Button
+    android:id="@+id/webAnnui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="探究网络" />
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.example.ninhaoshijie">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
+  <uses-permission android:name="android.permission.CALL_PHONE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:networkSecurityConfig="@xml/network_config"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name=".JetpackTestActivity"></activity>
+    <activity
+      android:name=".FruitActivity"
+      android:theme="@style/FruitActivityTheme"></activity>
+    <activity android:name=".MaterialTestActivity" />
+    <activity android:name=".RetrofitTestActivity" />
+    <activity android:name=".WangluoPeizhiActivity" />
+    <activity android:name=".NetworkTestActivity" />
+    <activity android:name=".WebViewTestActivity" />
+
+    <service
+      android:name=".MyIntentService"
+      android:exported="false" />
+
+    <activity android:name=".ServiceTestActivity" />
+
+    <service
+      android:name=".MyService"
+      android:enabled="true"
+      android:exported="true" />
+
+    <activity android:name=".AndroidThreadTestActivity" />
+    <activity android:name=".PlayVideoTestActivity" />
+    <activity android:name=".PlayAudioTestActivity" />
+    <activity android:name=".CameraAlbumTestActivity" />
+    <activity android:name=".NotificationActivity" />
+    <activity android:name=".NotificationTestActivity" />
+
+    <provider
+      android:name=".DatabaseProvider"
+      android:authorities="com.example.databasetest.provider"
+      android:enabled="true"
+      android:exported="true" />
+
+    <activity android:name=".ContactsTestActivity" />
+    <activity android:name=".RuntimePermissionTestActivity" />
+    <activity android:name=".DatabaseTestActivity" />
+    <activity android:name=".SharedPreferencesTestActivity" />
+    <activity android:name=".WenjianChijiuhuaCeshiHuodong" />
+    <activity android:name=".QiangzhiLixianGuangboFasongHuodong" />
+    <activity android:name=".LoginActivity" />
+
+    <receiver
+      android:name=".AnotherBroadcastReceiver"
+      android:enabled="true"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="com.example.ninhaoshijie.MY_BROADCAST" />
+      </intent-filter>
+    </receiver>
+    <receiver
+      android:name=".MyBroadcastReceiver"
+      android:enabled="true"
+      android:exported="true">
+      <intent-filter android:priority="100">
+        <action android:name="com.example.ninhaoshijie.MY_BROADCAST" />
+      </intent-filter>
+    </receiver>
+    <!--
+    <receiver
+      android:name=".BootCompleteReceiver"
+      android:enabled="true"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+        -->
+    <activity android:name=".BroadcastTest" />
+    <activity android:name=".XinwenHuodong" />
+    <activity android:name=".NewsContentActivity" />
+    <activity android:name=".SuipianHuodong" />
+    <activity android:name=".ZidingyiKongjianHuodong" />
+    <activity android:name=".UIBujuHuodong" />
+    <activity android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <provider
+      android:name="androidx.core.content.FileProvider"
+      android:authorities="com.example.cameraalbumtest.fileprovider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths" />
+    </provider>
+  </application>
+
+</manifest>
