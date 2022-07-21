@@ -159,6 +159,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
       R.id.vmBtn-> {
         startActivity<JetpackTestActivity>(this)
       }
+      R.id.tianqi-> {
+        startActivity<TianqiJiekouActivity>(this)
+      }
     }
   }
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -175,5 +178,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     peizhiAnnui.setOnClickListener(this)
     peizhiMD.setOnClickListener(this)
     vmBtn.setOnClickListener(this)
+    tianqi.setOnClickListener(this)
   }
 }

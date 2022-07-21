@@ -100,4 +100,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="探究网络" />
+  <Button
+    android:id="@+id/tianqi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="天气预报App" />
 </LinearLayout>
